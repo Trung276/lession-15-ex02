@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONVERTER</title>
+</head>
+<body>
+    <script>
+        function metersToFeet () {
+            let num = Number(prompt("Nhap vao so meters"));
+            let result = num * 3.279;
+            alert(num + " metters = " + result + " feet");
+        }
+        function feetToMeters () {
+            let num = Number(prompt("Nhap vao so feet"));
+            let result = num * 0.305;
+            alert(num + " feet = " + result + " meters");
+        }
+        function converter(x) {
+            if (x !=1 && x != 2) alert("Reload this page"); //chon sai
+            if (x === 1) metersToFeet(); //chon meters sang feet
+            if (x === 2) feetToMeters(); //chon feet sang meters
+        }
+        let num = Number(prompt("Nhap 1 de chon meters sang feet. Nhap 2 de chon feet sang meters"));
+        converter(num);
+    </script>
+</body>
+</html>
